@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Londrina+Shadow&family=Parkinsans:wght@300..800&display=swap');
+:root{
+    --primaryColor: #eef2f3;
+    --secundaryColor: #ffe4c9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.content__welcome,.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    gap: 1em;
+}
+
+.welcome__content, .welcome__img ,.content__form,.content__register{
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 30em; 
+    margin: 1em 0;  
+    width: auto;
+}
+.welcome__content,.content__form{
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    position: relative;
+}
+.welcome__img,.content__register{
+    background-color: var(--secundaryColor);
+}
+.welcome__nav{
+    display: flex;
+    justify-content: space-between;
+}
+.welcome__nav ul{
+    display: flex;
+}
+.welcome__nav ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: 0 0.7em ;
+}
+.content__title{
+    margin: 3em 0.1em 0.3em 0;
+    font-size: 2em;
+}
+.welcome__title{
+    margin-right: 5em;
+}
+.logo__img{
+    width: 3.5em;
+    border-radius: 70%;
+    position: absolute;
+    right: 1em;
+    top: 5.3em;
+    transform: translateX(-50%);
+
+}
+.welcome__button, .content__button{
+    width: 10em;
+    margin-top: 2em;
+    font-family: "Parkinsans", sans-serif;
+    background-color: var(--primaryColor);
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #465356 ;
+}
+.welcome__button:hover{
+    background-color: var(--secundaryColor);
+    border: #015163 ;
+}
+.welcome__img{
+    position: relative;
+    width: 30em;
+}
+
+.content__img{
+    position: relative;
+    width: 35em;
+    transform: translateX(-9%);
+    filter: drop-shadow(0px 0px 12px rgb(78, 75, 75));
+}
+
+.card{
+    background-color:#848cb7;
+    height: 50%;
+    width: 30%;
+    border-radius: 10px;
+}
+.content__register{
+    width: 40em;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.form__register{
+    display: flex;
+    flex-direction: column;
+}
+
+.content__input{
+    font-family: "Parkinsans", sans-serif;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #465356 ;
+}
+.content__register-title{
+    margin-bottom: 20px;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    display: block;
+    background: linear-gradient(to top, var(--secundaryColor),#ffff);
+    text-align: center;
+}
