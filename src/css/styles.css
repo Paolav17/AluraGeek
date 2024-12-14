@@ -14,7 +14,7 @@ body{
     font-style: normal;
 }
 
-.content__welcome,.content{
+.content__welcome, .content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -30,6 +30,7 @@ body{
     margin: 1em 0;  
     width: auto;
 }
+
 .welcome__content,.content__form{
     background-color: var(--primaryColor);
     display: flex;
@@ -93,19 +94,64 @@ body{
     filter: drop-shadow(0px 0px 12px rgb(78, 75, 75));
 }
 
+.content__register{
+    overflow:auto;
+}
+.card_container{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    width: 40em;
+    gap: 0.1em;
+    flex-wrap: wrap;
+}
 .card{
     background-color:#848cb7;
-    height: 50%;
-    width: 30%;
     border-radius: 10px;
-}
-.content__register{
-    width: 40em;
-    padding: 1em;
     display: flex;
-    gap: 1em;
+    flex-direction: column;
+    height: auto;
+    flex: 0 0 12em;
+    margin: 1.1em;
+    box-sizing: border-box;
+}
+#one {
+    pointer-events: none; 
+    background: transparent; 
+    border: none; 
 }
 
+#one > * { 
+    visibility: visible; 
+}
+
+
+.card__details{
+    display: flex;
+}
+
+.card--image{
+    width: 6em;
+    align-self: center;
+    padding-top: 10px;
+}
+.card__details{
+    display: flex;
+    flex-direction: column;
+}
+.card_name{
+    display: block;
+    padding: 1em;
+    font-weight: 600;
+}
+.card__container--value{
+    display: flex;
+    margin: 0.2em;
+    align-items: center;
+    height: auto;
+    width: auto;
+    
+}
 .form__register{
     display: flex;
     flex-direction: column;
@@ -120,6 +166,7 @@ body{
 .content__register-title{
     margin-bottom: 20px;
 }
+
 .footer{
     position: relative;
     bottom: 0;
@@ -128,4 +175,29 @@ body{
     display: block;
     background: linear-gradient(to top, var(--secundaryColor),#ffff);
     text-align: center;
+}
+
+@media (max-width: 1024px){ 
+    .content__welcome, .content__register{
+        width: 70%;
+        margin: 0;
+        padding: 0;
+    }
+    .welcome__content{
+        height: auto;
+        width: auto;
+        padding: 0.1em;
+        
+
+    }
+    .welcome__img{
+       width: auto;
+       height: auto;
+    }
+    .content__img{
+        width: 20em;
+        transform: translateX(0);
+    }
+    
+
 }
