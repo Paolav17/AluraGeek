@@ -34,14 +34,15 @@
             </div> 
                 <div class="content__form">
                     <h2 class="content__register-title">Registra tus libros</h2>
-                        <form action="" method="" class="form__register">
+                        <form class="form__register" data-formulario>
                             <label for="" class="content__label content__label--name">Nombre del libro:</label>
-                            <input type="text" placeholder="Nombre del libro" id="" class="content__input content__input--name">
+                            <input type="text" placeholder="Nombre del libro" id="" class="content__input content__input--name" data-name>
                             <label for="" class="content__label content__label--price">Precio de venta:</label>
-                            <input type="number" placeholder="Precio del libro" id="" class="content__input content__input--price">
+                            <input type="number" placeholder="Precio del libro" id="" class="content__input content__input--price" data-price>
                             <label for="" class="content__label content__label--img">Imagen de libro:</label>
-                            <input type="text" placeholder="Foto del libro" id="" class="content__input content__input--img">
+                            <input type="text" placeholder="Foto del libro" id="" class="content__input content__input--img" data-img>
                             <input type="submit" name="send" class="content__button content__button--button">
+                            <input type="button" name="clean" class="content__button content__button--button" value="Limpiar" id="limpiar"> 
                     </form>
                 </div>
             </div>
@@ -52,5 +53,7 @@
         <p class="footer__phrase">Made whit love</p>
     </footer>
     <script src="/src/js/mostrarLibros.js" type="module"></script>
+    <script src="/src/js/crearLibro.js" type="module"></script>
+    <script src="/src/js/eliminarLibros.js" type="module"></script>
 </body>
 </html>

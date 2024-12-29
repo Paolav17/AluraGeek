@@ -25,7 +25,7 @@ body{
 
 .welcome__content, .welcome__img ,.content__form,.content__register{
     border-radius: 10px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     height: 30em; 
     margin: 1em 0;  
     width: auto;
@@ -35,7 +35,7 @@ body{
     background-color: var(--primaryColor);
     display: flex;
     flex-direction: column;
-    padding: 3em;
+    padding: 1em;
     position: relative;
 }
 .welcome__img,.content__register{
@@ -111,12 +111,12 @@ body{
     display: flex;
     flex-direction: column;
     height: auto;
-    flex: 0 0 12em;
+    width: 10em ;
     margin: 1.1em;
     box-sizing: border-box;
 }
 #one {
-    pointer-events: none; 
+    /* pointer-events: none;  */
     background: transparent; 
     border: none; 
 }
@@ -131,7 +131,7 @@ body{
 }
 
 .card--image{
-    width: 6em;
+    width: 5em;
     align-self: center;
     padding-top: 10px;
 }
@@ -148,10 +148,20 @@ body{
     display: flex;
     margin: 0.2em;
     align-items: center;
+    justify-content: space-between;
     height: auto;
     width: auto;
     
 }
+.deleteIcon{
+    width: 3em;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 12px rgb(78, 75, 75));
+}
+.deleteIcon:hover {
+    filter: grayscale(100%);
+}
+
 .form__register{
     display: flex;
     flex-direction: column;
@@ -178,18 +188,7 @@ body{
 }
 
 @media (max-width: 1024px){ 
-    .content__welcome, .content__register{
-        width: 70%;
-        margin: 0;
-        padding: 0;
-    }
-    .welcome__content{
-        height: auto;
-        width: auto;
-        padding: 0.1em;
-        
-
-    }
+    
     .welcome__img{
        width: auto;
        height: auto;
@@ -197,6 +196,27 @@ body{
     .content__img{
         width: 20em;
         transform: translateX(0);
+    }
+
+    .logo__img{
+        right: 0em;
+        top: 0.2em;
+        transform: translateX(-6  0%);
+    }
+    .welcome__content{
+        padding:0;
+        height: 100%;
+    }
+    .welcome__nav{
+        display: none;
+    }
+    .content__register{
+       padding: 0;
+       margin: 0;
+    }
+    .content__register,.card_container{
+        width: auto;
+        margin: 1em;
     }
     
 
