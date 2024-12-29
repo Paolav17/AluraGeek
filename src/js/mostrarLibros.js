@@ -10,7 +10,7 @@ export default function crearCard(imagen,nombre,precio,id){
                         <p class="card_name"  data-prueba>${nombre}</p>
                         <div class="card__container--value">
                             <p class="card__price">$${precio}</p>
-                            <img class = "deleteIcon" src="/src/images/deleteIcon.ico" data-index="${id}" data-delete > 
+                            <img class = "deleteIcon" src="src/images/deleteIcon.ico" data-index="${id}" data-delete > 
                         </div>
                     </div>`;
                     return libro; 
